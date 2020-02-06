@@ -1,0 +1,71 @@
+main {
+    grid: 1;
+    margin-left: 2%;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3%;
+    list-style: none;
+
+}
+
+@media (max-width: 650px){
+    ul{
+        grid-template-columns: 1fr;
+
+    }
+}
+
+li{
+    width: 100%;
+}
+
+
+.dev-item{
+    background-color: rgb(247, 248, 248);
+    background-size: cover;
+    border: 1px solid rgb(190, 188, 188);
+    box-shadow: 4px 4px 5px rgb(197, 195, 195);
+    padding: 3%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+img{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    
+}
+
+.user-info{
+    margin: 2%;
+    width: 100%;
+}
+
+.user-name{
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 3%;
+}
+
+
+.bio{
+    margin: 4% 1%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgba(146, 105, 241, 0.8);
+}
+
