@@ -4,7 +4,6 @@ import './App.css';
 import './SideBar.css';
 import './Main.css';
 
-import './services/api';
 import api from './services/api';
 
 import DevItem from './components/DevItem/index';
@@ -25,7 +24,7 @@ function App() {
       loadDevs();
     },[]);
 
-    async function handleAddDev(){
+    async function handleAddDev(data){
 
       const response = await api.post('/devs', data)
    

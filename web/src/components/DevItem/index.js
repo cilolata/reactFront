@@ -7,7 +7,7 @@ function DevItem({dev}){
 return (
   <li className="dev-item">
   <header>
-    <img src={dev.avatar_url} alt={dev.name} srcset=""/>
+    <img src={dev.avatar_url} alt={dev.name} />
     <div className="user-info">
       <p className="user-name">{dev.name}</p>
       <p className="tecnologias">{dev.techs.join(' , ')}</p>
