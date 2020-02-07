@@ -21,7 +21,7 @@ function DevForm({ onSubmit }){
 
     return (
         <form onSubmit={handleSubmit}>
-        <h1 className>Cadastrar</h1>
+        <h1>Cadastrar</h1>
           <div className="input-block">
             <label htmlFor="github_username">Usuário do GitHub</label>
             <input 
