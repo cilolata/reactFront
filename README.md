@@ -1,6 +1,1 @@
-# reactFront
-# reactFront
-# reactFront
-# reactFrontEnd
-# reactFrontEnd
-# reactFrontEnd
+Template feito a partir da semana OmniStack para grupo de Estudos
