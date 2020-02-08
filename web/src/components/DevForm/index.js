@@ -18,7 +18,7 @@ function DevForm({ onSubmit }){
         setGithubUsername('');
         setTechs('');
     }
-
+   
     return (
         <form onSubmit={handleSubmit}>
         <h1>Cadastrar</h1>
