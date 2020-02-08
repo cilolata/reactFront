@@ -4,7 +4,7 @@ import './style.css';
 
 function DevForm({ onSubmit }){
 
-    const [github_username, setGithubUserName] = useState('');
+    const [github_username, setGithubUsername] = useState('');
     const [techs, setTechs] = useState('');
 
     async function handleSubmit(e){
@@ -15,7 +15,7 @@ function DevForm({ onSubmit }){
             techs,
         });
 
-        setGithubUserName('');
+        setGithubUsername('');
         setTechs('');
     }
 
@@ -29,15 +29,15 @@ function DevForm({ onSubmit }){
             id="github_username" 
             required 
             value={github_username} 
-            onChange={e =>setGithubUserName(e.target.value)} />
+            onChange={e =>setGithubUsername(e.target.value)} />
             <label htmlFor='techs'>Tecnologias</label>
             <input name="techs" 
             id="techs" 
             required 
             value={techs} 
-            onChange={e=>setTechs(e.target.value)} />
+            onChange={e =>setTechs(e.target.value)} />
           </div>
-          <button type="submit" className="submit">Salvar</button>
+          <button type="submit">Salvar</button>
         </form>
     )
 }
