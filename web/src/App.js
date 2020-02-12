@@ -35,6 +35,10 @@ function App() {
 
     };
 
+  
+
+
+
   return (
     <div id= 'app'>
     <aside>
@@ -44,7 +48,9 @@ function App() {
       <ul>
         {devs.map(dev => (
          
-          <DevItem key={dev._id} dev={dev}/>
+          <DevItem key={dev._id} dev={dev}
+          deleteDev={deleteDev}
+          />
         ))}
       
       </ul>

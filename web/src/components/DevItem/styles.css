@@ -49,3 +49,17 @@ a{
 a:hover{
     color: rgba(146, 105, 241, 0.8);
 }
+
+.button{    
+    width: 15%;
+    margin-right: 1%;
+    background-color: rgb(138, 67, 204);
+    color: #fff;
+    border: 1px solid rgb(218, 215, 215);
+    box-shadow: 0px 3px 5px rgb(211, 210, 210);
+    font-size: 12px;
+}
+
+.btn{
+    margin-left: 90px;
+}

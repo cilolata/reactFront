@@ -1,9 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './styles.css';
 
 
 function DevItem({ dev }){
 
+  async function DeleteDev({e}){
+
+    await onClick(
+      id
+    )
+      setDevs(devs.filter(dev => dev._id !== id))
+    }
+  }
+   
 return (
   <li key={dev._id} className="dev-item">
   <header>
@@ -14,7 +23,9 @@ return (
     </div>
   </header>
   <p className="bio">{dev.bio}</p>
-  <a href={`https://github.com/${dev.github_username}`}>Acessar perfil no GitHub</a>
+    <a href={`https://github.com/${dev.github_username}`}>Acessar perfil no GitHub</a>
+    <button className="button btn">Edit</button>
+    <button className="button" onClick={DeleteDev}>Delete</button>
   </li>
 
 
