@@ -24,7 +24,7 @@ function App() {
 
       } 
       loadDevs();
-    },[]);
+    },[devs]);
 
     async function handleAddDev(data){
 
@@ -35,12 +35,8 @@ function App() {
 
     };
 
-  
-
-
-
   return (
-    <div id= 'app'>
+    <div id='app'>
     <aside>
       <DevForm onSubmit={handleAddDev} />
     </aside>
@@ -49,10 +45,8 @@ function App() {
         {devs.map(dev => (
          
           <DevItem key={dev._id} dev={dev}
-          deleteDev={deleteDev}
           />
-        ))}
-      
+        ))}  
       </ul>
     </main>
     </div>
